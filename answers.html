@@ -8,7 +8,12 @@
         
         <script type="text/javascript">
             window.onload = function() {
+                alert(localStorage.getItem("fname"))
                 document.getElementById("fname").value= localStorage.getItem("fname");
+                document.getElementById("sname").value= localStorage.getItem("sname");
+                document.getElementById("lname").value= localStorage.getItem("lname");
+                document.getElementById("phone").value= localStorage.getItem("phone");
+                document.getElementById("mail").value= localStorage.getItem("mail");
             }
         </script>
         <h1>Ответы</h1>
@@ -16,19 +21,15 @@
             <form method="post">
                 <p><label for="fname">Имя:</label>&nbsp;<input type="text" readonly id="fname" ></p>
 
-                <input type="text" id="fname" pattern="^[а-яА-ЯёЁ]+$" required name="fname"><br>
+                <p><label for="sname">Фамилия:</label>&nbsp;<input type="text" readonly id="sname" ></p>
 
-                <label for="lname">Фамилия:</label><br>
-                <input required type="text" pattern="^[а-яА-ЯёЁ]+$" id="sname" name="sname" ><br>
+                <p><label for="lname">Отчество:</label>&nbsp;<input type="text" readonly id="lname" ></p>
+                
+                <p><label for="phone">Номер телефона:</label>&nbsp;<input type="text" readonly id="phone" ></p>
 
-                <label for="lname">Отчество:</label><br>
-                <input required type="text" pattern="^[а-яА-ЯёЁ]+$" id="lname" name="lname" ><br>
+                <p><label for="mail">Электронный адрес:</label>&nbsp;<input type="text" readonly id="mail" ></p>
 
-                <label for="lname">Номер телефона:</label><br>
-                <input required type="tel" pattern="^\+7[0-9]{10}$" id="phone" name="phone" ><br>
 
-                <label for="lname">Электронный адрес:</label><br>
-                <input required type="email" id="mail" name="mail" ><br>
 
 
                 
