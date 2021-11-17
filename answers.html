@@ -15,14 +15,14 @@
                 document.getElementById("mail").value= localStorage.getItem("mail");
                 document.getElementById("section").value= localStorage.getItem("section");
                 document.getElementById("bith").value= localStorage.getItem("bithday");
-                    
+                document.writeln(localStorage.getItem("bith"))
                 }
         </script>
         <h1>Ответы</h1>
         <div>
             <form method="post">
                 <p><label for="fname">Имя:</label>&nbsp;<input type="text" readonly id="fname" ></p>
-                alert(localStorage.getItem("bithday"))
+
                 <p><label for="sname">Фамилия:</label>&nbsp;<input type="text" readonly id="sname" ></p>
 
                 <p><label for="lname">Отчество:</label>&nbsp;<input type="text" readonly id="lname" ></p>
