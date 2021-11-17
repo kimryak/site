@@ -17,23 +17,10 @@
                     document.getElementById("theme").hidden = true;}
             }
             function storage() {
-                event.preventDefault();
-                let form = document.querySelector('form');
-                form.submit();
+                
+                localStorage.setItem('fname', document.getElementById("fname").value)
             }
 
-            
-            function retrieveFormValue(event) {
-                event.preventDefault();
-                //const fname = document.getElementById("fname").value;
-
-                const formdata = {
-                    name: document.getElementById("fname").value
-                }
-                console.log(formdata);
-            }
-            const form = document.getElementById("forma");
-            form.addEventListener('submit', retrieveFormValue);
         </script>
         <h1>Регистрация на мероприятие</h1>
         <div>
@@ -73,7 +60,7 @@
                 <label for="lname" id="theme.label" hidden>Тема доклада:</label><br>
                 <input type="text" id="theme" name="mail" hidden><br>
                 </p>
-                <p><input type="submit"  value="Отправить"></p>
+                <p><input type="submit" onclick=storage() value="Отправить"></p>
                 
                 
 
