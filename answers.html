@@ -7,13 +7,14 @@
     <body>
         
         <script type="text/javascript">
-
-                //document.getElementById("fname").value= localStorage.getItem("fname");
+                window.onload = function() {
+                document.getElementById("fname").value= localStorage.getItem("fname");
                 document.getElementById("sname").value= localStorage.getItem("sname")
                 document.getElementById("lname").value= localStorage.getItem("lname")
                 document.getElementById("phone").value= localStorage.getItem("phone")
                 document.getElementById("mail").value= localStorage.getItem("mail");
                 document.getElementById("section").value= localStorage.getItem("section");
+                }
         </script>
         <h1>Ответы</h1>
         <div>
