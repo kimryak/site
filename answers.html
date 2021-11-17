@@ -7,13 +7,13 @@
     <body>
         
         <script type="text/javascript">
-            window.onload = function() {
+
                 document.getElementById("fname").value= localStorage.getItem("fname");
                 document.getElementById("sname").value= localStorage.getItem("sname")
                 document.getElementById("lname").value= localStorage.getItem("lname")
                 document.getElementById("phone").value= localStorage.getItem("phone")
                 document.getElementById("mail").value= localStorage.getItem("mail");
-            }
+                document.getElementById("section").value= localStorage.getItem("section");
         </script>
         <h1>Ответы</h1>
         <div>
@@ -28,7 +28,7 @@
 
                 <p><label for="mail">Электронный адрес:</label>&nbsp;<input type="text" readonly id="mail" ></p>
 
-
+                <p><label for="section">Секция</label>&nbsp;<input type="text" readonly id="section" ></p>
 
 
                 
